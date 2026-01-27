@@ -23,25 +23,51 @@ const socialLinks= [
 
 ];
 
+// const skills = [
+//   "React",
+//   "Next.js",
+//   "TypeScript",
+//   "Node.js",
+//   "GraphQL",
+//   "PostgreSQL",
+//   "MongoDB",
+//   "Redis",
+//   "Docker",
+//   "AWS",
+//   "Vercel",
+//   "Tailwind CSS",
+//   "Prisma",
+//   "Jest",
+//   "Cypress",
+//   "Figma",
+//   "Git",
+//   "GitHub Actions",
+// ];
+
+// Skills with colors and logos
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
-  "Git",
-  "GitHub Actions",
+  { name: "React", color: "#61DAFB", logo: "/logos/ReactJs.png" },
+  { name: "Next", color: "#ffff", logo: "/logos/next.png" },
+  { name: "Neon", color: "#47e2b6", logo: "/logos/neon.png" },
+  { name: "Node", color: "#339933", logo: "/logos/node.png" },
+  { name: "Laravel", color: "#FF2D20", logo: "/logos/laravel.png" },
+  { name: "Firebase", color: "#FFCA28", logo: "/logos/firebase.png" },
+  { name: "Redux", color: "#6D4FDB", logo: "/logos/redux.png" },
+  { name: "Clerk", color: "#5B50EB", logo: "/logos/clerk.png" },
+  { name: "GraphQL", color: "#E10098", logo: "/logos/graphql.png" },
+  { name: "PostgreSQL", color: "#336791", logo: "/logos/postgresql.png" },
+  { name: "MongoDB", color: "#47A248", logo: "/logos/mongodb.png" },
+  { name: "JWT", color: "#DC382D", logo: "/logos/jwt.png" },
+  { name: "Docker", color: "#2496ED", logo: "/logos/docker.png" },
+  { name: "Tanstack Query", color: "#FF9900", logo: "/logos/tanstack-query.svg" },
+  { name: "Tailwind CSS", color: "#38B2AC", logo: "/logos/Tailwind_CSS.png" },
+  { name: "Prisma", color: "#34D1C1", logo: "/logos/prisma.png" },
+  { name: "daisyUI", color: "#F6E05E", logo: "/logos/daisyui.png" },
+  { name: "Vercel", color: "#ffff", logo: "/logos/vercel.png" },
+  { name: "TypeScript", color: "#3178C6", logo: "/logos/typescript.png" },
+  { name: "Jest", color: "#C21325", logo: "/logos/jest.png" },
+  { name: "Convex", color: "#FF9900", logo: "/logos/convex.png" },
+  { name: "Figma", color: "#FF9900", logo: "/logos/figma.png" },
 ];
 
 
@@ -68,7 +94,7 @@ const Hero = () => {
           alt="Hero Background"
           fill
           priority
-          className="object-cover opacity-40"
+          className="object-cover opacity-20"
         />
       </div>
 
@@ -174,9 +200,9 @@ const Hero = () => {
                     </div>
                     {/* Stats Badge */}
                     <div className="absolute -top-4 -left-4 glass-strong rounded-xl px-4 py-3 animate-float animation-delay-500">
-                      <div className="text-2xl font-bold text-primary">5+</div>
+                      <div className="text-2xl font-bold text-primary">Marwan</div>
                       <div className="text-xs text-muted-foreground">
-                        Years Exp.
+                        Warradi
                       </div>
                     </div>
                 </div>
@@ -194,11 +220,18 @@ const Hero = () => {
               <div className="absolute left-0 top-0 bottom-0 w-32 bg-linear-to-r from-transparent to-transparent z-10"/>
               <div className="absolute right-0 top-0 bottom-0 w-32 bg-linear-to-l from-transparent to-transparent z-10 "/>
 
-              <div className="flex animate-marquee">
+              <div className="flex w-max animate-marquee">
                 {[...skills, ...skills].map((skill, idx) => (
-                  <div key={idx} className="shrink-0 px-8 py-4">
-                    <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">
-                      {skill}
+                  <div key={idx} className="shrink-0 px-8 py-4 flex items-center gap-3">
+                    <Image
+                      src={skill.logo}
+                      alt={`${skill.name} logo`}
+                      width={24}
+                      height={24}
+                      className="object-contain"
+                    />
+                    <span className={`text-xl font-semibold hover:text-muted-foreground transition-colors`} style={{ color: skill.color}}>
+                      {skill.name}
                     </span>
                   </div>
                 ))}
