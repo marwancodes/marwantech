@@ -5,6 +5,8 @@ import Button from "@/components/ui/Button";
 import { ArrowRight, ChevronDown, Download, Github, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { skills } from "@/constants";
+
 
 type Dot = {
   left: string;
@@ -23,32 +25,6 @@ const socialLinks= [
 
 ];
 
-
-// Skills with colors and logos
-const skills = [
-  { name: "React", color: "#61DAFB", logo: "/logos/ReactJs.png" },
-  { name: "Next", color: "#ffff", logo: "/logos/next.png" },
-  { name: "Neon", color: "#47e2b6", logo: "/logos/neon.png" },
-  { name: "Node", color: "#339933", logo: "/logos/node.png" },
-  { name: "Laravel", color: "#FF2D20", logo: "/logos/laravel.png" },
-  { name: "Firebase", color: "#FFCA28", logo: "/logos/firebase.png" },
-  { name: "Redux", color: "#6D4FDB", logo: "/logos/redux.png" },
-  { name: "Clerk", color: "#5B50EB", logo: "/logos/clerk.png" },
-  { name: "GraphQL", color: "#E10098", logo: "/logos/graphql.png" },
-  { name: "PostgreSQL", color: "#336791", logo: "/logos/postgresql.png" },
-  { name: "MongoDB", color: "#47A248", logo: "/logos/mongodb.png" },
-  { name: "JWT", color: "#DC382D", logo: "/logos/jwt.png" },
-  { name: "Docker", color: "#2496ED", logo: "/logos/docker.png" },
-  { name: "Tanstack Query", color: "#FF9900", logo: "/logos/tanstack-query.svg" },
-  { name: "Tailwind CSS", color: "#38B2AC", logo: "/logos/Tailwind_CSS.png" },
-  { name: "Prisma", color: "#34D1C1", logo: "/logos/prisma.png" },
-  { name: "daisyUI", color: "#F6E05E", logo: "/logos/daisyui.png" },
-  { name: "Vercel", color: "#ffff", logo: "/logos/vercel.png" },
-  { name: "TypeScript", color: "#3178C6", logo: "/logos/typescript.png" },
-  { name: "Jest", color: "#C21325", logo: "/logos/jest.png" },
-  { name: "Convex", color: "#FF9900", logo: "/logos/convex.png" },
-  { name: "Figma", color: "#FF9900", logo: "/logos/figma.png" },
-];
 
 
 const Hero = () => {
@@ -109,16 +85,16 @@ const Hero = () => {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
+                Building <span className="text-primary glow-text">web</span>
                 <br />
-                experiences with
+                applications with
                 <br />
                 <span className="font-serif italic font-normal text-white">
                   precision.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                Hi, I&apos;m Marouane Ouarradi — a UK-based full-stack developer specializing
+                Hi, I&apos;m Marwan Warradi — a UK-based full-stack developer specializing
                 in React, Next.js, and TypeScript. I build scalable, high-performance web
                 applications with a strong focus on user experience and clean code.
               </p>

@@ -3,20 +3,8 @@
 import Button from "../ui/Button";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { NavLinks } from "@/constants";
 
-interface NavLink {
-  name: string;
-  href: string;
-}
-
-
-const NavLinks: NavLink[] = [
-  { name: "About", href: "/#about" },
-  { name: "Projects", href: "/#projects" },
-  { name: "Experience", href: "/#experience" },
-  { name: "Testimonials", href: "/#testimonials" },
-  { name: "Contact", href: "/#contact" },
-]
 
 const Navbar = () => {
 
