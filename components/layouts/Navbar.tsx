@@ -68,9 +68,13 @@ const Navbar = () => {
         <div className="md:hidden glass-strong animate-fade-in">
               <div className="container mx-auto px-6 py-6 flex flex-col gap-4 ">
                 {NavLinks.map((link, i) => (
-                  <a href={link.href} key={i} className="text-lg text-muted-foreground hover:text-foreground rounded-full py-2">{link.name}</a>
+                  <a 
+                    href={link.href} 
+                    key={i} 
+                    onClick={() => setIsMenuOpen(false)} 
+                    className="text-lg text-muted-foreground hover:text-foreground rounded-full py-2">{link.name}</a>
                 ))}
-                <Button size="sm">Contact Me</Button>
+                <Button onClick={() => setIsMenuOpen(false)} size="sm">Contact Me</Button>
               </div>
         </div>
       )}
