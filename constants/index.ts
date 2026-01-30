@@ -1,5 +1,5 @@
-import { NavLink, Project, Highlight, Skill, Experience, Testimonial, ContactInfo } from '@/types/index';
-import { Code2, Lightbulb, Mail, MapPin, Phone, Rocket, Users } from 'lucide-react';
+import { NavLink, Project, Highlight, Skill, Experience, Testimonial, ContactInfo, SocialLink, FooterLink } from '@/types/index';
+import { Code2, Github, Lightbulb, Linkedin, Mail, MapPin, Phone, Rocket, Twitter, Users } from 'lucide-react';
 
 export const NavLinks: NavLink[] = [
   { name: "About", href: "/#about" },
@@ -206,4 +206,18 @@ export const contactInfo: ContactInfo[] = [
     value: "Birmingham, United Kingdom",
     href: "#",
   },
+];
+
+
+export const socialLinks: SocialLink[] = [
+  { icon: Github, href: "#", label: "GitHub" },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Twitter, href: "#", label: "Twitter" },
+];
+
+export const footerLinks: FooterLink[] = [
+  { href: "#about", label: "About" },
+  { href: "#projects", label: "Projects" },
+  { href: "#experience", label: "Experience" },
+  { href: "#contact", label: "Contact" },
 ];

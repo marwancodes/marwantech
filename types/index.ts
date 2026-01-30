@@ -50,3 +50,13 @@ export interface ContactInfo {
   value: string;
   href: string;
 }
+
+export interface SocialLink {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  href: string;
+  label: string;
+}
+export interface FooterLink {
+  href: string;
+  label: string;
+}
