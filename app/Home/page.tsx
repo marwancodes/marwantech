@@ -1,7 +1,9 @@
 import About from './About/About';
+import Contact from './Contact/Contact';
 import Experience from './Experience/Experience';
 import Hero from './Hero/Hero';
 import Projects from './Projects/Projects';
+import Testimonials from './Testimoniels/Testimonials';
 
 const HomePage = () => {
   return (
@@ -10,6 +12,8 @@ const HomePage = () => {
         <About />
         <Projects />
         <Experience />
+        <Testimonials />
+        <Contact />
     </div>
   )
 }

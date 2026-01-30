@@ -1,5 +1,5 @@
-import { NavLink, Project, Highlight, Skill, Experience } from '@/types/index';
-import { Code2, Lightbulb, Rocket, Users } from 'lucide-react';
+import { NavLink, Project, Highlight, Skill, Experience, Testimonial, ContactInfo } from '@/types/index';
+import { Code2, Lightbulb, Mail, MapPin, Phone, Rocket, Users } from 'lucide-react';
 
 export const NavLinks: NavLink[] = [
   { name: "About", href: "/#about" },
@@ -148,5 +148,62 @@ export const experiences: Experience[] = [
       "Worked as a content moderator for Meta platforms, ensuring policy compliance and user safety. Developed strong attention to detail, decision-making skills, and the ability to work under pressure in fast-paced environments.",
     technologies: ["Policy Review", "Content Analysis", "Quality Assurance"],
     current: false,
+  },
+];
+
+
+export const testimonials: Testimonial[]= [
+  {
+    quote:
+      "Pedro is one of the most talented engineers I've worked with. His attention to detail and ability to translate complex requirements into elegant solutions is remarkable.",
+    author: "Sarah Chen",
+    role: "CTO, Tech Innovators Inc.",
+    avatar:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop",
+  },
+  {
+    quote:
+      "Working with Pedro was a game-changer for our project. He delivered ahead of schedule with code quality that set a new standard for our team.",
+    author: "Michael Rodriguez",
+    role: "Product Manager, Digital Solutions",
+    avatar:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+  },
+  {
+    quote:
+      "Pedro's expertise in React and TypeScript helped us rebuild our entire frontend in record time. His architectural decisions continue to pay dividends.",
+    author: "Emily Watson",
+    role: "Engineering Lead, StartUp Labs",
+    avatar:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop",
+  },
+  {
+    quote:
+      "Not only is Pedro technically brilliant, but he's also a fantastic communicator and team player. He elevated everyone around him.",
+    author: "David Kim",
+    role: "CEO, Innovation Hub",
+    avatar:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+  },
+];
+
+export const contactInfo: ContactInfo[] = [
+  {
+    icon: Mail,
+    label: "Email",
+    value: "marouaneord@gmail.com",
+    href: "mailto:marouanord@gmail.com",
+  },
+  {
+    icon: Phone,
+    label: "Phone",
+    value: "+44 7362 354325",
+    href: "tel:+447362354325",
+  },
+  {
+    icon: MapPin,
+    label: "Location",
+    value: "Birmingham, United Kingdom",
+    href: "#",
   },
 ];
