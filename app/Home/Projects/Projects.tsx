@@ -1,12 +1,21 @@
+"use client";
+
 import AnimatedBorderButton from '@/components/ui/AnimatedBorderButton'
 import { ArrowUpRight, Github } from 'lucide-react'
 import Image from 'next/image'
-import React from 'react'
 import { projects } from '@/constants'
+import { useState } from 'react'
 
 
 
 const Projects = () => {
+
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleProjects = showAll
+    ? projects
+    : projects.slice(0, 4);
+
   return (
     <section id="projects" className="py-32 relative overflow-hidden">
       {/* Bg glows */}
@@ -33,12 +42,12 @@ const Projects = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project, idx) => (
-            <div
-              key={idx}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
-              style={{ animationDelay: `${(idx + 1) * 100}ms` }}
-            >
+          {visibleProjects.map((project, idx) => (
+              <div
+                key={idx}
+                className="group glass rounded-2xl overflow-hidden animate-fade-in md:row-span-1"
+                style={{ animationDelay: `${(idx + 1) * 100}ms` }}
+              >
               {/* Image */}
               <div className="relative overflow-hidden aspect-video">
                 <Image
@@ -101,10 +110,11 @@ const Projects = () => {
           ))}
         </div>
 
+
         {/* View All CTA */}
         <div className="text-center mt-12 animate-fade-in animation-delay-500">
-          <AnimatedBorderButton>
-            View All Projects
+          <AnimatedBorderButton onClick={() => setShowAll(prev => !prev)}>
+            {showAll ? "Show Less Projects" : "View All Projects"}
             <ArrowUpRight className="w-5 h-5" />
           </AnimatedBorderButton>
         </div>
@@ -114,4 +124,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

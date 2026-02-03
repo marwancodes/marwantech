@@ -1,11 +1,12 @@
 
-interface AnimatedBorderButtonProps {
+interface AnimatedBorderButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
 }
 
-const AnimatedBorderButton = ({ children }: AnimatedBorderButtonProps) => {
+const AnimatedBorderButton = ({ children, ...props }: AnimatedBorderButtonProps) => {
     return (
-        <button
+        <button 
+        {...props}
         className="relative bg-transparent border border-border 
         text-foreground hover:border-primary/50 transition-all 
         duration-1000 focus:outline-none focus-visible:ring-2 

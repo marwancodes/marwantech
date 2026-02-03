@@ -25,30 +25,27 @@ const About = () => {
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I&apos;m a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I&apos;m Marouane, a full-stack JavaScript developer based in the UK, with a
+                strong focus on modern web technologies. I enjoy building clean,
+                well-structured applications that solve real problems and are easy to
+                maintain.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                My main stack includes React, Next.js, TypeScript, Node.js, and MongoDB.
+                I&apos;ve worked on real-world projects ranging from authentication systems
+                and REST APIs to full MERN applications deployed in production.
               </p>
               <p>
-                When I&apos;m not coding, you&apos;ll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I care a lot about writing readable code, improving performance, and
+                continuously learning better patterns and best practices. I&apos;m always
+                pushing myself to grow as a developer and deliver work I&apos;m proud of.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                &quot;My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain.&quot;
+                &quot;I focus on building practical, reliable software — clean code,
+                thoughtful UX, and solutions that actually work in the real world.&quot;
               </p>
             </div>
           </div>
