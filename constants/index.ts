@@ -13,6 +13,7 @@ export const skills: Skill[] = [
   { name: "React", color: "#61DAFB", logo: "/logos/ReactJs.png" },
   { name: "Next", color: "#ffff", logo: "/logos/next.png" },
   { name: "Neon", color: "#47e2b6", logo: "/logos/neon.png" },
+  { name: "AWS", color: "#ffff", logo: "/logos/AWS.png" },
   { name: "Node", color: "#339933", logo: "/logos/node.png" },
   { name: "Laravel", color: "#FF2D20", logo: "/logos/laravel.png" },
   { name: "Firebase", color: "#FFCA28", logo: "/logos/firebase.png" },
@@ -32,6 +33,7 @@ export const skills: Skill[] = [
   { name: "Jest", color: "#C21325", logo: "/logos/jest.png" },
   { name: "Convex", color: "#FF9900", logo: "/logos/convex.png" },
   { name: "Figma", color: "#FF9900", logo: "/logos/figma.png" },
+  { name: "Zod", color: "#3178C6", logo: "/logos/zod-logo.png" },
 ];
 
 export const highlights: Highlight[] = [

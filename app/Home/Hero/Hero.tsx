@@ -138,7 +138,7 @@ const Hero = () => {
               />
               <div className="relative glass rounded-3xl p-2 glow-border">
                     <Image
-                      src="/images/profile-photo1.png"
+                      src="/images/profile-photo.png"
                       alt="Marwan Warradi"
                       width={400}
                       height={500}
