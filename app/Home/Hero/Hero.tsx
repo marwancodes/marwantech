@@ -17,11 +17,11 @@ type Dot = {
 
 
 const socialLinks= [
-  { icon: Github, href: "#" },
-  { icon: Linkedin, href: "#" },
+  { icon: Github, href: "https://github.com/marwancodes" },
+  { icon: Linkedin, href: "https://ma.linkedin.com/in/marouane-ouarradi" },
   { icon: Twitter, href: "#" },
-  { icon: Youtube, href: "#" },
-  { icon: Instagram, href: "#" },
+  { icon: Youtube, href: "https://www.youtube.com/@MarwanWarradi" },
+  { icon: Instagram, href: "https://www.instagram.com/marwanwarradi" },
 
 ];
 
@@ -102,7 +102,7 @@ const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-400">
-              <Button size="lg">
+              <Button size="lg" onClick={() => window.location.href = "#contact"}>
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
               <AnimatedBorderButton>
