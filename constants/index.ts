@@ -255,8 +255,8 @@ export const contactInfo: ContactInfo[] = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+44 7362 354325",
-    href: "tel:+447362354325",
+    value: "+44 7727 268354",
+    href: "tel:+447727268354",
   },
   {
     icon: MapPin,
