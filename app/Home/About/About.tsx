@@ -31,7 +31,7 @@ const About = () => {
                 maintain.
               </p>
               <p>
-                My main stack includes React, Next.js, TypeScript, Node.js, and MongoDB.
+                My main stack includes React, Next.js, TypeScript, Node.js, AI tools, and MongoDB.
                 I&apos;ve worked on real-world projects ranging from authentication systems
                 and REST APIs to full MERN applications deployed in production.
               </p>

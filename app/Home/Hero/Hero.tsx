@@ -94,9 +94,11 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-300">
-                Hi, I&apos;m Marwan Warradi — a UK-based full-stack developer specializing
-                in React, Next.js, and TypeScript. I build scalable, high-performance web
-                applications with a strong focus on user experience and clean code.
+                Hi, Im Marwan Warradi — a UK-based full-stack developer specializing
+                Hi, I&apos;m Marwan Warradi — a UK-based full-stack developer with expertise
+                in React, Next.js, TypeScript, WordPress, Shopify, and SEO. I build fast,
+                scalable, and user-focused websites that help businesses grow online through clean code,
+                strong performance, and smart digital strategy.
               </p>
             </div>
 

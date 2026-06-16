@@ -65,6 +65,14 @@ export const highlights: Highlight[] = [
 
 export const projects: Project[] = [
   {
+    title: 'SmartWind E-commerce Website',
+    description: 'SmartWind is a full-stack e-commerce web application built with PostgreSQL, Drizzle ORM, Express.js, React, Node.js, and TypeScript, featuring secure authentication and a clean, responsive UI with Tailwind CSS and DaisyUI.',
+    image: '/images/SmartWind_Silk-Mode.png',
+    tags: ["React", "Express", "Polar Payments", "DaisyUI", "Clerk", "PostgreSQL", "Neon", "Drizzle ORM", "Axios", "Tanstack Query", "Tailwind CSS"],
+    link: "https://smartwind.onrender.com",
+    github: "https://github.com/marwancodes/smartwind",
+  },
+  {
     title: 'HotBargain E-commerce Website',
     description: 'PERN Stack E-commerce web application built with PostgreSQL & drizzle ORM, Express.js, React.js, and Node.js with TypeScript. Used Clerk for authentication and Tailwind CSS for styling and DaisyUI for components.',
     image: '/images/HOTBARGAINSHOP.png',
